@@ -1,0 +1,29 @@
+import keyboard
+import time
+import pyautogui
+
+paused = False
+
+
+def toggle_pause():
+    global paused
+    paused = not paused
+    if paused:
+        print("Пауза")
+    else:
+        print("Запуск")
+
+
+keyboard.add_hotkey('space', toggle_pause)
+
+try:
+    while True:
+        if not paused:
+            pyautogui.click()
+
+            time.sleep(0.1)
+
+        time.sleep(0.1)
+
+except KeyboardInterrupt:
+    print("End")
