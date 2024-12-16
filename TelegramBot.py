@@ -23,7 +23,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 if __name__ == "__main__":
-    application = ApplicationBuilder().token('7266889222:AAGY1OSXxmdtzQ5tLWshnsNQberfMp9bhuU').build()
+    application = ApplicationBuilder().token('726****222:*****OSX****zQ5t****nsNQ***fMp9****').build() #Token бота
 
     start_handler = CommandHandler('start', start)
     help_handler = CommandHandler('help', help)
